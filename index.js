@@ -11,13 +11,13 @@ function serverUrl(text) {
 
 function translate() {
   const inputText = input.value;
-    console.log("clicked")
+  console.log("clicked");
   fetch(serverUrl(inputText))
     .then((response) => response.json())
     .then((data) => {
       translation.innerText = data.contents.translated;
     })
     .catch((error) => {
-      alert(error);
+      alert("Oops! An Error occured. Please try again in a few minutes");
     });
 }
