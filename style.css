@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary: black;
+    --secondary: green;
+}
+body{
+    background: var(--primary);
+    font-family: "Teko";
+}
+img{
+    position: relative;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.5;
+}
+
+.text{
+    position: absolute;
+    top: 0%;
+    left: 25%;
+    color: white;
+    height: 100vh;
+}
+
+.navbar {
+    background: var(--primary);
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title {
+    color: var(--secondary);
+    font-size: 4rem;
+  }
+  
+  .main {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100vh;
+  }
+  
+  .about {
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .translate-btn {
+    padding: 1.5rem 2.7rem;
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-size: 1rem;
+    font-family: inherit;
+    border-radius: 10px;
+    border: 1px solid var(--secondary);
+  }
+  
+  #text-area {
+    margin: 30px 0;
+    width: 400px;
+    height: 100px;
+    font-size: 1.2rem;
+  }
+  
+  .translation {
+    width: 400px;
+    height: 200px;
+    font-size: 1.4rem;
+    margin: 30px 0;
+    border: 1px solid var(--secondary);
+    padding: 0 1rem;
+  }
